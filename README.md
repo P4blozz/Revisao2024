@@ -13,7 +13,7 @@ Este é um simples Gerador de Senhas em C#, que permite ao usuário gerar senhas
 # Requisitos
 .NET Framework ou .NET Core/5/6 (dependendo de sua versão do C#).
 
-# ------------------------------------------------------------------------------
+# -------------------------------------------------------------------------
 
 # Padaria Delicio Pão
 Este é um site simples e responsivo para a "Padaria Delicio Pão", onde você pode encontrar informações sobre os produtos e acessar diretamente um link para o WhatsApp, facilitando o contato com a padaria.
