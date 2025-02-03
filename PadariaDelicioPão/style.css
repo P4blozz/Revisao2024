@@ -18,9 +18,9 @@ header {
   color: white;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: 600;
+.logo img {
+  max-height: 70px;
+  width: auto;
 }
 
 nav ul {
@@ -51,26 +51,18 @@ nav ul li a {
 }
 
 .hero img {
-  width: 100%; /* Garante que a imagem ocupe toda a largura */
+  width: 100%;
   height: auto;
   display: block;
 }
 
 .hero-content {
-  padding: 20px 0; /* Espaço entre a imagem e o texto */
-  z-index: 2; /* Garante que o texto não sobreponha a imagem */
+  padding: 20px 0;
   color: #111;
 }
 
-/* Se você quiser que a imagem tenha um filtro semitransparente */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
+.dark-mode .hero-content {
+  color: white;
 }
 
 /* Destaques */
@@ -119,6 +111,10 @@ nav ul li a {
   color: #666;
   margin-bottom: 10px;
 }
+.dark-mode .produto p {
+  background-color: #333;
+  color: white;
+}
 
 .produto span {
   font-size: 16px;
@@ -137,7 +133,7 @@ footer {
 /* Modo Escuro */
 .dark-mode {
   background-color: #222;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .dark-mode header {
@@ -147,6 +143,12 @@ footer {
 .dark-mode footer {
   background: #111;
 }
-.logo img {
-  height: 100px;
+
+.dark-mode .produto {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .produto:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
